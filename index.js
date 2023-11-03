@@ -15,7 +15,18 @@ var savedStr = str.split(" ")
     return word.split("").reverse().join("")
      
 })
-console.log(savedStr.join(" "));
+// console.log(savedStr.join(" "));
 
 // question 2 --> How to check if an object is an array or not ? Provide some code .
+
+// Array is a consructor through which we will apply .isArray method to check whether the element is array or not 
+
+// consoling the function with empty array and empty object we will get the boolean check in return 
+
+function Arraycheck(element) {
+    return Array.isArray(element);
+}
+
+console.log(Arraycheck([]));
+console.log(Arraycheck({}));
 
