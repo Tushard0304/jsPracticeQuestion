@@ -30,3 +30,38 @@ function Arraycheck(element) {
 console.log(Arraycheck([]));
 console.log(Arraycheck({}));
 
+// Question 3 --> How to empty an array in javascript ? do not reset it to a new array , and do not loop through to pop each value  
+// just used a method of array to make its length 0 and hence it will become an empty array
+
+var arr = [1,2,3,4,5,6,7,8,9,10]
+arr.length = 0;
+console.log("now the length of array is ",arr.length);
+
+// Question 4 --> How Would you check if a number is an integer
+// just use modulous operator
+
+var a = 16.5;
+if (a % 1 === 0) {
+    console.log("the number is an integer");
+}
+else{
+    console.log("no the number is not an integer");    
+}
+
+// Question 5 --> Make this work :
+// duplicate([1,2,3,4,5]);  Output should be like this[1,2,3,4,5,1,2,3,4,5]
+// here a method of concat is used for the array passed in arguments.hence, it will add the array in itself
+
+function duplicate(arr) {
+    return arr.concat(arr);
+}
+console.log(duplicate([1,2,3,4,5]));
+
+// Question 6 --> Write a javascript function that reverse a number 
+
+function reverseNumber(number) {
+    
+}
+reverseNumber(233);
+
+
